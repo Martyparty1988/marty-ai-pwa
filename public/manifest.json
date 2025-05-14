@@ -1,0 +1,39 @@
+{
+  "name": "Marty AI - Správa rezervací vil",
+  "short_name": "Marty AI",
+  "description": "PWA pro správu rezervací vil a souvisejících úkolů",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#4f46e5",
+  "theme_color": "#4f46e5",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Rezervace",
+      "short_name": "Rezervace",
+      "description": "Zobrazit rezervace",
+      "url": "/?page=reservations",
+      "icons": [{ "src": "/icons/calendar.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Úkoly",
+      "short_name": "Úkoly",
+      "description": "Zobrazit úkoly",
+      "url": "/?page=tasks",
+      "icons": [{ "src": "/icons/tasks.png", "sizes": "96x96" }]
+    }
+  ]
+}

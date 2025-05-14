@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offline - Marty AI</title>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #1f2937;
+      background-color: #f9fafb;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+    
+    .container {
+      max-width: 28rem;
+      margin: 4rem auto;
+      background-color: white;
+      border-radius: 0.5rem;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+      overflow: hidden;
+    }
+    
+    .header {
+      background-color: #4f46e5;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    
+    .content {
+      padding: 1.5rem;
+    }
+    
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    
+    p {
+      margin-bottom: 1.5rem;
+    }
+    
+    .feature-list {
+      margin-bottom: 1.5rem;
+    }
+    
+    .feature-list li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    
+    .feature-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #4f46e5;
+      font-weight: bold;
+    }
+    
+    .button {
+      display: inline-block;
+      background-color: #4f46e5;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.375rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.15s ease-in-out;
+    }
+    
+    .button:hover {
+      background-color: #4338ca;
+    }
+    
+    footer {
+      margin-top: auto;
+      text-align: center;
+      color: #6b7280;
+      padding: 1rem;
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Marty AI - Offline</h1>
+    </div>
+    
+    <div class="content">
+      <p>Vypadá to, že jste momentálně offline. Některé funkce aplikace budou stále dostupné:</p>
+      
+      <ul class="feature-list">
+        <li>Zobrazení již načtených rezervací</li>
+        <li>Prohlížení a správa úkolů</li>
+        <li>Přístup k vašim lokálně uloženým datům</li>
+      </ul>
+      
+      <p>Některé akce jako synchronizace kalendářů nebo komunikace přes Telegram vyžadují připojení k internetu.</p>
+      
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="/" class="button">Zpět na hlavní stránku</a>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p>Marty AI © 2025 - PWA pro správu rezervací vil</p>
+  </footer>
+  
+  <script>
+    window.addEventListener('online', () => {
+      window.location.reload();
+    });
+  </script>
+</body>
+</html>
